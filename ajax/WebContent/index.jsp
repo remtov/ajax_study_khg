@@ -86,16 +86,49 @@
 			<tbody id="ajaxTable">
 				<!-- 1 서치펑션실행으로 인한 출력부로써의 역할을 하게될 티바디에 고유아이디를 부여하여준다. -->
 				<tr>
-					<td>검색창에</td>
-					<td>이름을</td>
-					<td>검색하시오</td>
-					<td>...</td>
+					<td>null</td>
+					<td>null</td>
+					<td>null</td>
+					<td>null</td>
 
 				</tr>
 			</tbody>
 
 		</table>
 
+	</div>
+	<div class="container">
+	<table class="table" style="text-align:center; border: 1px solid #dddddd">
+	<thead>
+	<tr>
+	<th colspan="2" style="background-color:#fafafa; text-align:center;">회원 등록 양식</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td style="background-color:#fafafa; text-align:center;"><h5>이름</h5></td>
+	<td><input class ="form-control" type="text" id="registerName" size="20"></td>
+	</tr>
+	
+	<tr>
+	<td style="background-color:#fafafa; text-align:center;"><h5>나이</h5></td>
+	<td><input class ="form-control" type="text" id="registerName" size="20"></td>
+	</tr>
+	
+	<tr>
+	<td style="background-color:#fafafa; text-align:center;"><h5>성별</h5></td>
+	<td><div class="form-group" style="text-align:center; margin:0 auto;"><div class="btn-group" data</div></td>
+	</tr>
+	
+	<tr>
+	<td style="background-color:#fafafa; text-align:center;"><h5>이메일</h5></td>
+	<td><input class ="form-control" type="text" id="registerName" size="20"></td>
+	</tr>
+	
+	
+	</tbody>
+	</table>
+	
 	</div>
 
 </body>
