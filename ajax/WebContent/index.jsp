@@ -16,9 +16,7 @@
 <!-- 내부 부트스트랩 제이쿼리파일 링크 -->
 <script>
 	//2.타입택스트/자바스크립트는 없어도되지만 브라우저입장에서 안정적이므로 넣어주는 습관이좋다.
-			window.onload =function(){
-			searchFunction();//처음 페이지로딩이 끝났을때 해당함수를 실행할수있게 해서 아무것도 입력안됬을때도 결과가 출력될수 있게
-		} 
+			
 	var request = new XMLHttpRequest();//3.웹사이트에 요청을보내는 인스턴스
 
 	function searchFunction() {
@@ -28,7 +26,7 @@
 								.getElementById("userName").value), true);
 		//4.파라메터를 username 입력한 내용이 UTF8으로 인코딩되서실제 파라미터로 넘어가게 된다. 서블릿은  유저네임을 받아서 처리후 제이슨으로 내보낸다. 우리는 그제이슨을 결과로 받아서 출력해주면된다.
 		request.onreadystatechange = searchProcess;//성공적으로 요청한 동작이 끝났다면 서치프로세스를 실행한다.
-		request.send();
+		request.send(null);
 	}
 
 	function searchProcess() {
@@ -50,6 +48,9 @@
 		}
 
 	}
+	/* window.onload =function(){
+		searchFunction();//처음 페이지로딩이 끝났을때 해당함수를 실행할수있게 해서 아무것도 입력안됬을때도 결과가 출력될수 있게
+	} */ 
 </script>
 </head>
 
@@ -97,7 +98,8 @@
 		</table>
 
 	</div>
-	<div class="container">
+
+	<!-- 	<div class="container">
 	<table class="table" style="text-align:center; border: 1px solid #dddddd">
 	<thead>
 	<tr>
@@ -117,7 +119,8 @@
 	
 	<tr>
 	<td style="background-color:#fafafa; text-align:center;"><h5>성별</h5></td>
-	<td><div class="form-group" style="text-align:center; margin:0 auto;"><div class="btn-group" data</div></td>
+	<td><div class="form-group" style="text-align:center; margin:0 auto;">
+	<div class="btn-group" data</div></td>
 	</tr>
 	
 	<tr>
@@ -127,9 +130,9 @@
 	
 	
 	</tbody>
-	</table>
+	</table></div> -->
 	
-	</div>
+	
 
 </body>
 </html>
